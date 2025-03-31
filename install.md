@@ -28,7 +28,7 @@
 ### Step 3: Updating the Code and Opening the Website
 
 1. Open ```index.html```. In line 38, enter your Sheet ID. Save your changes.
-2.  Open ```about.html```. In line 22, enter your Sheet ID. Save your changes. (Annie, when u edit this, adjust the 'Save your changes' to whatever is actually on screen)
+2.  Open ```about.html```. In line 22, enter your Sheet ID. Save your changes.
 3. Now, on the GitHub repository, click **Settings**
 4. In the "Code and automation" section of the sidebar, click **Pages**.
 5. Under "Build and deployment", under "Source", select **Deploy from a branch**.
