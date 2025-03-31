@@ -30,13 +30,13 @@
 
 
 <script>
-	const SHEET_ID = "1ghDsZnvTo9SGzhTk3gDPWlwm2fBRbJ9etxpPkpQNhMI";
+	const SHEET_ID = "1x6aJpjxxsb_-TWj-42QgpOGXleo8rbemAy95CrEmyI4";
 	const API_KEY = "AIzaSyBWI7E-YWwNQls-1IFT5KRS1rt3FtEFi5g";
 	const RANGE = "Sheet1"; // Change if necessary
 	let data = [];
 
 	function fetchData() {
-		fetch(`https://sheets.googleapis.com/v4/spreadsheets/1x6aJpjxxsb_-TWj-42QgpOGXleo8rbemAy95CrEmyI4/values/Sheet1?key=AIzaSyBWI7E-YWwNQls-1IFT5KRS1rt3FtEFi5g`)
+		fetch(`https://sheets.googleapis.com/v4/spreadsheets/${SHEET_ID}/values/Sheet1?key=AIzaSyBWI7E-YWwNQls-1IFT5KRS1rt3FtEFi5g`)
 			.then(response => response.json())
 			.then(result => {
 				data = result.values.map(row => row.map(cell => cell ? String(cell).replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&#39;") : ""));
