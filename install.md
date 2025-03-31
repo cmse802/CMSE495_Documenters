@@ -8,13 +8,15 @@
 
 1. If you don't have conda installed on your computer, follow the instructions on [this website](https://docs.conda.io/projects/conda/en/stable/index.html)
 2. If you don't have Jupyter Notebook installed, use the command `conda install notebook` to install Jupyter Notebook.
-3. Clone this notebook into an Anaconda Prompt terminal, and your preferred working directory by using ```git clone https://github.com/minh-msu/Detroit_Leadership_Dossiers.git```
-4. Navigate to the repo with the command ```cd Detroit_Leadership_Dossiers```
-5. Make a new environment using ```conda env create --prefix ./envs --file environment.yml```
-6. Activate the environment ```conda activate ./envs```
-8. Using the command `jupyter notebook Contact_Scraper.ipynb` navigate to the webscraping file.
-9. Run the whole notebook, this notebook will read from ```List_of_names_1_7_2.xlsx``` and [this website](https://publish.smartsheet.com/9def816c9e6a4a4395d2903039bf714d) and merge the contact information into the dataframe derived from ```List_of_names_1_7_2.xlsx```
-10. The resulting dataframe will be saved onto ```contact.csv```
+3. Navigate ```https://github.com/minh-msu/Detroit_Leadership_Dossiers.git```. On the top right, between `Watch` and `Star`, click on the `Fork` button, and select `Create New Fork`.
+4. Github should automatically redirect you to the forked repository. In the forked repository, select the green `Code` drop down menu, and copy the the HTTPS link by clicking the button shaped like two squares on the right of the link.
+5. Now, open a conda prompt terminal, and clone your respository using the command `git clone (LINK YOU COPIED HERE)`.
+6. Navigate to the repo with the command ```cd Detroit_Leadership_Dossiers```
+7. Make a new environment using ```conda env create --prefix ./envs --file environment.yml```
+8. Activate the environment ```conda activate ./envs```
+9. Using the command `jupyter notebook Contact_Scraper.ipynb` navigate to the webscraping file.
+10. Run the whole notebook, this notebook will read from ```List_of_names_1_7_2.xlsx``` and [this website](https://publish.smartsheet.com/9def816c9e6a4a4395d2903039bf714d) and merge the contact information into the dataframe derived from ```List_of_names_1_7_2.xlsx```
+11. The resulting dataframe will be saved onto ```contact.csv```
 
 ### Step 2: Uploading Your Data to Google Sheets
 
@@ -27,10 +29,10 @@
 
 ### Step 3: Updating the Code and Opening the Website
 
-1. Open ```index.html```. In line 38, enter your Sheet ID. Save your changes.
-2.  Open ```about.html```. In line 22, enter your Sheet ID. Save your changes.
+1. In your forked repository (via the GitHub web interface), open ```index.html```. In line 33, update the variable `SHEET_ID` with the ID you copied from the template (copy and paste your ID in the quotations on line 33). Commit your changes.
+2.  Open ```about.html```. In line 17, enter your Sheet ID the same as above, Commit your changes.
 3. Now, on the GitHub repository, click **Settings**
 4. In the "Code and automation" section of the sidebar, click **Pages**.
 5. Under "Build and deployment", under "Source", select **Deploy from a branch**.
-6. Select the main branch, and leave the file as `/(root)`. It may take a second for the page to deploy, reload a few times if necessary.
-7. Finally, you can view your version using the link GitHub provides you.
+6. Select the main branch, and leave the file as `/(root)`. It may take a second for the page to deploy. 
+7. Finally, you can view your version using the link `your_github_username.github.io/Detroit_Leadership_Dossiers`.
