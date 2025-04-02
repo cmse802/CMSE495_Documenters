@@ -1,54 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Details</title>
-    <style>
-        body { font-family: Serif; text-align: center; font-size: 24px; background: #f6db36;}
-        .container { max-width: 400px; margin: auto; padding: 20px; border: 1px solid #000000; border-radius: 10px; }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Detroit Official Details</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <div class="container">
+    <h1>Detroit Official Details</h1>
     <div id="details"></div>
+    <a href="index.html" class="back-button">Back to Search</a>
+  </div>
 
-
-    <script>
-        const SHEET_ID = "1ghDsZnvTo9SGzhTk3gDPWlwm2fBRbJ9etxpPkpQNhMI";
-        const API_KEY = "AIzaSyBWI7E-YWwNQls-1IFT5KRS1rt3FtEFi5g";
-        const RANGE = "Sheet1";
-        let data = [];
-
-        function fetchData() {
-            fetch(`https://sheets.googleapis.com/v4/spreadsheets/${SHEET_ID}/values/Sheet1?key=AIzaSyBWI7E-YWwNQls-1IFT5KRS1rt3FtEFi5g`)
-                .then(response => response.json())
-                .then(result => {
-                    data = result.values;
-                    displayDetails();
-                })
-                .catch(error => console.error("Error fetching data:", error));
-        }
-
-        function displayDetails() {
-            const detailsContainer = document.getElementById("details");
-            const row = JSON.parse(localStorage.getItem("selectedPerson"));
-            if (!row) {
-                detailsContainer.innerHTML = "<p>No data available.</p>";
-                return;
-            }
-            
-            const excludedColumns = ["Pre", "First", "Middle", "Last", "Suffix"];
-            let detailsHTML = "<h2>Details</h2>";
-            row.forEach((cell, index) => {
-                if (cell && cell.trim() !== "" && !excludedColumns.includes(data[0][index])) {
-                    detailsHTML += `<p><strong>${data[0][index]}:</strong> ${cell}</p>`;
-                }
-            });
-            
-            detailsContainer.innerHTML = detailsHTML;
-        }
-
-        fetchData();
-    </script>
+  <script src="script.js"></script>
 </body>
 </html>

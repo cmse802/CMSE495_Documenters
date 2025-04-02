@@ -1,80 +1,38 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Find a Detroiter</title>
   <link rel="stylesheet" href="https://public.codepenassets.com/css/reset-2.0.min.css">
-<link rel="stylesheet" href="./style.css">
-
-<!--We'll move this to the css file later. I have to adjust the notation slightly-->
-<style>
-	ul { list-style: none; padding: 0; display: none; }
-	li { padding: 8px; margin: 5px 0; border-radius: 5px; cursor: pointer; }
-	#search-results { max-width: 300px; text-align: center; margin: auto}
-    .result-item { padding: 5px; cursor: pointer; }
-    .result-item:hover { background-color: transparent; color: #ffffff; }
-</style>
-
-</head><!--Start the actual html HERE-->
+  <link rel="stylesheet" href="style.css">
+</head>
 <body>
-<!-- partial:index.partial.html -->
-<div class="cntr">
-	<div class="cntr-innr">
-	  <label class="search" for="inpt_search">
-			<input id="search" type="text" />
-		</label>
-		<p>Who are you looking for?</p>
-	</div>
-</div>
-<div id="search-results"></div>
+  <h1>Find a Detroiter</h1>
 
+  <div class="search-container">
+    <div class="search-box">
+      <div class="cntr">
+        <div class="cntr-innr">
+          <div class="search">
+            <input id="search" type="text" placeholder="Search for people..." />
+            <label for="search"></label>
+          </div>
+          <p>Who are you looking for?</p>
+        </div>
+      </div>
+      <div id="search-results"></div>
+    </div>
+    
+    <div class="department-filter">
+      <select id="departmentFilter">
+        <option value="">All Departments</option>
+      </select>
+    </div>
+  </div>
 
-<script>
-	const SHEET_ID = "1x6aJpjxxsb_-TWj-42QgpOGXleo8rbemAy95CrEmyI4";
-	const API_KEY = "AIzaSyBWI7E-YWwNQls-1IFT5KRS1rt3FtEFi5g";
-	const RANGE = "Sheet1"; // Change if necessary
-	let data = [];
+  <div id="peopleList"></div>
 
-	function fetchData() {
-		fetch(`https://sheets.googleapis.com/v4/spreadsheets/${SHEET_ID}/values/Sheet1?key=AIzaSyBWI7E-YWwNQls-1IFT5KRS1rt3FtEFi5g`)
-			.then(response => response.json())
-			.then(result => {
-				data = result.values.map(row => row.map(cell => cell ? String(cell).replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&#39;") : ""));
-			})
-			.catch(error => console.error("Error fetching data:", error));
-	}
-
-	function searchNames(query) {
-		const resultsContainer = document.getElementById("search-results");
-		resultsContainer.innerHTML = "";
-		if (!query) return;
-
-		const nameIndex = data[0].indexOf("Name");
-		if (nameIndex === -1) return;
-		
-		const results = data.slice(1).filter(row => row[nameIndex].toLowerCase().includes(query.toLowerCase()));
-		results.forEach(row => {
-			const div = document.createElement("div");
-			div.className = "result-item";
-			div.textContent = row[nameIndex];
-			div.onclick = () => {
-				localStorage.setItem("selectedPerson", JSON.stringify(row));
-				window.location.href = "about.html";
-			};
-			resultsContainer.appendChild(div);
-		});
-	}
-
-	document.getElementById("search").addEventListener("input", (event) => {
-		searchNames(event.target.value);
-	});
-
-	fetchData();
-</script>
-
-
-<!-- partial -->
-  <script  src="./script.js"></script>
-
+  <script src="script.js"></script>
 </body>
 </html>
