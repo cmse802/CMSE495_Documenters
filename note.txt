@@ -1,0 +1,6 @@
+This was achieved from a conversation with Claude 3.7 Sonnet. I put in index-legacy into Claude and asked it to do a series of things:
+1. Combine the search and dropdown menu feature so that when a department is selected it affects search
+2. Add an image as the background Image Credit: (https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn.wallpapersafari.com%2F87%2F15%2FWiXa6e.jpg&f=1&nofb=1&ipt=c2b3526cfbd12264a26820fd6ae48553702e5f2bbc3a341c29bf474587a92145&ipo=images) I found this by searching 'royalty free image of detroit' on duckduckgo. Not 100% sure it is free to use commercially yet. Will investigate later. 
+I then added my about.html file and then told it to reorganize into index.html, about.html, style.css, and script.js
+From there I worked through various small style alterations
+
