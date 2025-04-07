@@ -7,7 +7,6 @@
 ### Step 1: Scrape for Officials' Contact Information
 
 1. If you don't have conda installed on your computer, follow the instructions on [this website](https://conda-forge.org/download/)
-2. If you don't have Jupyter Notebook installed, use the command `conda install notebook` to install Jupyter Notebook.
 3. Navigate ```https://github.com/minh-msu/Detroit_Leadership_Dossiers.git```. On the top right, between `Watch` and `Star`, click on the `Fork` button, and select `Create New Fork`.
 4. Github should automatically redirect you to the forked repository. In the forked repository, select the green `Code` drop down menu, and copy the the HTTPS link by clicking the button shaped like two squares on the right of the link.
 5. Now, open a conda prompt terminal, and clone your respository using the command `git clone (LINK YOU COPIED HERE)`.
