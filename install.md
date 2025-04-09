@@ -28,10 +28,9 @@
 
 ### Step 3: Updating the Code and Opening the Website
 
-1. In your forked repository (via the GitHub web interface), open ```index.html```. In line 33, update the variable `SHEET_ID` with the ID you copied from the template (copy and paste your ID in the quotations on line 33). Commit your changes.
-2.  Open ```about.html```. In line 17, enter your Sheet ID the same as above, Commit your changes.
-3. Now, on the GitHub repository, click **Settings**
-4. In the "Code and automation" section of the sidebar, click **Pages**.
-5. Under "Build and deployment", under "Source", select **Deploy from a branch**.
-6. Select the main branch, and leave the file as `/(root)`. It may take a second for the page to deploy. 
-7. Finally, you can view your version using the link `your_github_username.github.io/Detroit_Leadership_Dossiers`.
+1. In your forked repository (via the GitHub web interface), open ```script.js```. In line 2, update the variable `SHEET_ID` with the ID you copied from the template (copy and paste your ID in the quotations on line 2) and your API key in the line below(line 3). Commit your changes.
+2. Now, on the GitHub repository, click **Settings**
+3. In the "Code and automation" section of the sidebar, click **Pages**.
+4. Under "Build and deployment", under "Source", select **Deploy from a branch**.
+5. Select the main branch, and leave the file as `/(root)`. It may take a second for the page to deploy. 
+6. Finally, you can view your version using the link `your_github_username.github.io/Detroit_Leadership_Dossiers`.
