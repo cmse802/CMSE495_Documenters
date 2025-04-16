@@ -20,3 +20,4 @@ The two primary goals of this project are to automate data collection and to cre
 * [Documenters](https://www.documenters.org/)
 * [CSS Search Field Animation](https://codepen.io/sebastianpopp/pen/myYmmy)
 * [License](https://github.com/minh-msu/CMSE495_Documenters/blob/main/LICENSE.txt)
+* [Board/Department emails and phone numbers](https://detroitmi.gov/government/boards)
