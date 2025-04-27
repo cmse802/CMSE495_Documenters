@@ -16,7 +16,7 @@
 4. Github should automatically redirect you to the forked repository. In the forked repository, select the green `Code` drop down menu, and copy the the HTTPS link by clicking the button shaped like two squares on the right of the link.
 5. Now, open a conda prompt terminal, and clone your respository using the command `git clone (LINK YOU COPIED HERE)`.
 6. Navigate to the repo with the command ```cd Detroit_Leadership_Dossiers```
-7. Make a new environment using ```conda env create --prefix ./envs --file environment.yml```
+7. Make a new environment using ```conda env create --prefix ./envs --file environment.yml```. This will take a while. 
 8. Activate the environment ```conda activate ./envs```
 9. Either run ```jupyter lab``` or ```jupyter notebook``` to open a Jupyter window with the new environment
 10. Navigate to the [data extration file](backend/Contact_Scraper.ipynb) (backend/Contact_Scraper.ipynb)
