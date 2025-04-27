@@ -19,7 +19,7 @@
 7. Make a new environment using ```conda env create --prefix ./envs --file environment.yml```. This will take a while. 
 8. Activate the environment ```conda activate ./envs```
 9. Either run ```jupyter lab``` or ```jupyter notebook``` to open a Jupyter window with the new environment
-10. Navigate to the [data extration file](backend/Contact_Scraper.ipynb) (backend/Contact_Scraper.ipynb)
+10. Navigate to [```backend/Contact_Scraper.ipynb```](backend/Contact_Scraper.ipynb)
 11. In the ```Kernel``` tab, choose ```Restart Kernel and Run All Cells...```
 12. This notebook will read from [```data/List_of_names_1_7_2.xlsx```](data/List_of_names_1_7_2.xlsx) and [this website](https://publish.smartsheet.com/9def816c9e6a4a4395d2903039bf714d) and merge the contact information into the dataframe derived from ```data/List_of_names_1_7_2.xlsx```
 13. The resulting dataframe will be saved onto [```data/contact.csv```](data/contact.csv)
