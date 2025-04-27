@@ -46,6 +46,6 @@
 1. In the Jupyter window opened in Step 1, navigate to [backend/Finance_Scraper.ipynb](backend/Finance_Scraper.ipynb)
 2. In the ```Kernel``` tab, choose ```Restart Kernel...```
 3. Run the first code block ```Imports```
-4. If you want to test the scraping function, run all the code blocks in the ```Scraping``` subheading, else skip ahead. This part will scrape from the [Wayne County Finance system](https://wccampaignfinance.com/Public/ReceiptsList) for committees' contribution records and saves them into a CSV file called [data/contributions.csv](../data/contributions.csv).
-5. Run all the code blocks in the ```Visualization``` subheading, this will generate pie charts with dynamic hovering for a provided committee's name.
+4. If you want to test the scraping function, run all the code blocks in the ```Scraping``` subheading, else skip ahead. This part will scrape from the [Wayne County Finance system](https://wccampaignfinance.com/Public/ReceiptsList) for committees' contribution records and saves them into a CSV file called [data/contributions.csv](../data/contributions.csv). If you want to create a brand new contribution records dataset, uncomment the last line in the last code block (```df.to_csv('../data/contributions.csv', index=False)```).
+5. Run all the code blocks in the ```Visualization``` subheading, this will generate pie charts with dynamic hovering for a provided committee's name. Change the parameter in the ```make_dynamic_chart()``` function if you want to test run it with other names. 
 6. The data and pie charts obtained from this notebook have not been integrated into the frontend yet.
