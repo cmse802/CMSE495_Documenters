@@ -23,7 +23,7 @@
 11. In the ```Kernel``` tab, choose ```Restart Kernel and Run All Cells...```
 12. This notebook will read from [```data/List_of_names_1_7_2.xlsx```](data/List_of_names_1_7_2.xlsx) and [this website](https://publish.smartsheet.com/9def816c9e6a4a4395d2903039bf714d) and merge the contact information into the dataframe derived from ```data/List_of_names_1_7_2.xlsx```
 13. The resulting dataframe will be saved onto [```data/contact.csv```](data/contact.csv).
-14. There is already a ```data/contact.csv``` file ready to be used in this repository. However, if you believe that there's an update to the City of Detroit contact information website, push the new file by navigating to the opened conda prompt terminal, run ```git pull```, then ```git add data/contact.csv```, then ```git commit -m "Update data/contact.csv file"```, and finally git push. 
+14. There is already a ```data/contact.csv``` file ready to be used in this repository. However, if you believe that there's an update to the City of Detroit contact information website, push the new file by navigating to the opened conda prompt terminal, run ```git pull```, then ```git add data/contact.csv```, then ```git commit -m "Update data/contact.csv file"```, and finally ```git push```. 
 
 ### Step 2: Uploading Your Data to Google Sheets
 
