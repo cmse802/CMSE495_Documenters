@@ -1,4 +1,5 @@
 # Detroit Leadership Dossiers
+![Detroit_Skyline](./detroit-skyline.jpg)
 ## Authors:
 - Annie Wilcox (wilcox63@msu.edu)
 - Samuel Corder (cordersa@msu.edu)
