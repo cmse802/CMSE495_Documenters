@@ -1,15 +1,21 @@
 name: envs
 channels:
+  - conda-forge
   - defaults
 dependencies:
   - jupyter
-  - notebook
   - lxml
+  - notebook
   - numpy
+  - openpyxl
   - pandas
   - pip
   - selenium
-  - openpyxl
+  - matplotlib
+  - plotly
+  - seaborn
+  - geckodriver
+  - firefox
   - pip:
       - webdriver-manager
 prefix: envs
