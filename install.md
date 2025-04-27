@@ -4,18 +4,25 @@
 
 ### Minh Anh Dang, Annie Wilcox, Ryan Hanks, Ryan Flanery, Samuel Corder
 
-### Step 1: Scrape for Officials' Contact Information
+### Step 0: Manually Collected Data
+1. The team was provided with this file: [```data/List_of_names_1_7_2.xlsx```](data/List_of_names_1_7_2.xlsx) with all these filled out: Name (Prefix, First, Middle, Last, Suffix), Title, Department/District, and Board/Commission/Department.
+2. All the LinkedIn handles were manually collected using the committee's name and title, and double-checked from their profile.
+3. All the X/Twitter handles are found by feeding all available information of a committee into the Grok AI and manually inputted back into the csv file
+
+### Step 1: Extract Officials' Contact Information
 
 1. If you don't have conda installed on your computer, follow the instructions on [this website](https://conda-forge.org/download/)
-3. Navigate ```https://github.com/minh-msu/Detroit_Leadership_Dossiers.git```. On the top right, between `Watch` and `Star`, click on the `Fork` button, and select `Create New Fork`.
+3. Navigate to ```https://github.com/minh-msu/Detroit_Leadership_Dossiers.git```. On the top right, between `Watch` and `Star`, click on the `Fork` button, and select `Create New Fork`.
 4. Github should automatically redirect you to the forked repository. In the forked repository, select the green `Code` drop down menu, and copy the the HTTPS link by clicking the button shaped like two squares on the right of the link.
 5. Now, open a conda prompt terminal, and clone your respository using the command `git clone (LINK YOU COPIED HERE)`.
 6. Navigate to the repo with the command ```cd Detroit_Leadership_Dossiers```
 7. Make a new environment using ```conda env create --prefix ./envs --file environment.yml```
 8. Activate the environment ```conda activate ./envs```
-10. Using the command `jupyter notebook backend/Contact_Scraper.ipynb` navigate to the [data extration file](backend/Contact_Scraper.ipynb).
-11. Run the whole notebook, this notebook will read from [```data/List_of_names_1_7_2.xlsx```](data/List_of_names_1_7_2.xlsx) and [this website](https://publish.smartsheet.com/9def816c9e6a4a4395d2903039bf714d) and merge the contact information into the dataframe derived from ```data/List_of_names_1_7_2.xlsx```
-12. The resulting dataframe will be saved onto [```data/contact.csv```](data/contact.csv)
+9. Either run ```jupyter lab``` or ```jupyter notebook``` to open a Jupyter window with the new environment
+10. Navigate to the [data extration file](backend/Contact_Scraper.ipynb) (backend/Contact_Scraper.ipynb)
+11. In the ```Kernel``` tab, choose ```Restart Kernel and Run All Cells...```
+12. This notebook will read from [```data/List_of_names_1_7_2.xlsx```](data/List_of_names_1_7_2.xlsx) and [this website](https://publish.smartsheet.com/9def816c9e6a4a4395d2903039bf714d) and merge the contact information into the dataframe derived from ```data/List_of_names_1_7_2.xlsx```
+13. The resulting dataframe will be saved onto [```data/contact.csv```](data/contact.csv)
 
 ### Step 2: Uploading Your Data to Google Sheets
 
@@ -31,6 +38,14 @@
 1. In your forked repository (via the GitHub web interface), open ```script.js```. In line 2, update the variable `SHEET_ID` with the ID you copied from the template (copy and paste your ID in the quotations on line 2) and your API key in the line below(line 3). Commit your changes.
 2. Now, on the GitHub repository, click **Settings**
 3. In the "Code and automation" section of the sidebar, click **Pages**.
-4. Under "Build and deployment", under "Source", select **Deploy from a branch**.
-5. Select the main branch, and leave the file as `/(root)`. It may take a second for the page to deploy. 
+4. Select the main branch, and leave the file as `/(root)`. 
+5. Under "Build and deployment", under "Source", select **Deploy from a branch**. It may take a second for the page to deploy
 6. Finally, you can view your version using the link `your_github_username.github.io/Detroit_Leadership_Dossiers`.
+
+### Step 4 (Extra): Scrape for Officials' Contribution Record
+1. In the Jupyter window opened in Step 1, navigate to [backend/Finance_Scraper.ipynb](backend/Finance_Scraper.ipynb)
+2. In the ```Kernel``` tab, choose ```Restart Kernel...```
+3. Run the first code block ```Imports```
+4. If you want to test the scraping function, run all the code blocks in the ```Scraping``` subheading, else skip ahead. This part will scrape from the [Wayne County Finance system](https://wccampaignfinance.com/Public/ReceiptsList) for committees' contribution records and saves them into a CSV file called [data/contributions.csv](../data/contributions.csv).
+5. Run all the code blocks in the ```Visualization``` subheading, this will generate pie charts with dynamic hovering for a provided committee's name.
+6. The data and pie charts obtained from this notebook have not been integrated into the frontend yet.
