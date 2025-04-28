@@ -6,7 +6,7 @@
 
 ### Step 0: Manually Collected Data
 1. The team was provided with this file: [```data/List_of_names_1_7_2.xlsx```](data/List_of_names_1_7_2.xlsx) with all these filled out: Name (Prefix, First, Middle, Last, Suffix), Title, Department/District, and Board/Commission/Department.
-2. All the LinkedIn handles were manually collected using the committee's name and title, and double-checked from their profile.
+2. All the LinkedIn handles were found by searching for the name of the committee member, followed by "LinkedIn Detroit". If the account had the position listed on their page, they were added. If not, a process of searching articles on the committee and members was used to attempt to verify the LinkedIn page. If no verification was found, the page was not added.
 3. All the X/Twitter and Instagram handles are found by feeding all available information of a committee into the Grok AI and manually inputted back into the csv file.
 
 ### Step 1: Extract Officials' Contact Information
