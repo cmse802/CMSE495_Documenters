@@ -10,7 +10,7 @@
 ## Project Description: 
 This is a group project for the Michigan State University Data Science Capstone course. The authors of this project are supporting initial research for Documenters, a nonprofit organization dedicated to making government more honest and accessible by publishing public records. The team is tasked with collecting public information on Wayne County officials. Some of this information includes email, phone number, Twitter, LinkedIn, non-profit affiliation, and campaign finance data. We were also given information, such as their name, title, district, department, etc., from the start. In addition to collecting the data, the team created a search engine GUI that returns dossiers of the information for use by journalists and civilians. 
 
-The two primary goals of this project are to automate data collection and to create an effective visualization. We want to automate the data collection for the Detroit Documenters, as it saves them time. Creating an good visualization is important, because without it, our project is pointless.
+The two primary goals of this project are to automate data collection and to create an effective visualization. We want to automate the data collection for the Detroit Documenters, as it saves them time. Creating an good visualization is important, because without it, our project is pointless. Our progress are documented in the ```FinalVideo.mov```.
 
 ## Installation:
 * To demo the project, visit: https://minh-msu.github.io/Detroit_Leadership_Dossiers/
