@@ -2,8 +2,8 @@
 ![Detroit_Skyline](./detroit-skyline.jpg)
 ## Authors:
 - Annie Wilcox (anmwilcox@gmail.com, LinkedIn: anne-marie-wilcox)
-- Samuel Corder (cordersa@msu.edu)
-- Ryan Hanks (hanksrya@msu.edu)(linkedin ryanhanks25)
+- Samuel Corder (cordersa@msu.edu, LinkedIn: https://www.linkedin.com/in/samuel-corder-a31753261/)
+- Ryan Hanks (hanksrya@msu.edu)(LinkedIn: ryanhanks25)
 - Minh Anh Dang (danganh1@msu.edu)
 - Ryan Flanery (flaneryr@msu.edu)
 
