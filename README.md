@@ -1,7 +1,7 @@
 # Detroit Leadership Dossiers
 ![Detroit_Skyline](./detroit-skyline.jpg)
 ## Authors:
-- Annie Wilcox (anmwilcox@gmail.com)
+- Annie Wilcox (anmwilcox@gmail.comm LinkedIn: anne-marie-wilcox)
 - Samuel Corder (cordersa@msu.edu)
 - Ryan Hanks (hanksrya@msu.edu)(linkedin ryanhanks25)
 - Minh Anh Dang (danganh1@msu.edu)
