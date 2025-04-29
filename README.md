@@ -3,7 +3,7 @@
 ## Authors:
 - Annie Wilcox (anmwilcox@gmail.com)
 - Samuel Corder (cordersa@msu.edu)
-- Ryan Hanks (hanksrya@msu.edu)
+- Ryan Hanks (hanksrya@msu.edu)(linkedin ryanhanks25)
 - Minh Anh Dang (danganh1@msu.edu)
 - Ryan Flanery (flaneryr@msu.edu)
 
